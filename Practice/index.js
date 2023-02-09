@@ -38,14 +38,14 @@
 // " si = p*r*t*/100 " 
 // " 25 - square root"
 
-// let p = parseFloat(prompt("enter the principal amount:"));
-// let r = parseFloat(prompt("enter the rate of intrest:"));
-// let t = parseFloat(prompt("enter the duration"));
+let p = parseFloat(prompt("enter the principal amount:"));
+let r = parseFloat(prompt("enter the rate of intrest:"));
+let t = parseFloat(prompt("enter the duration"));
 
-// let simple_interst = p*r*t*0.01;
-// let amount = p+ simple_interst; 
-// console.log(`simple interst of amount is ; ${simple_interst}`);
-// console.log(`total amount you will get ${amount}`);
+let simple_interst = p*r*t*0.01;
+let amount = p+ simple_interst; 
+console.log(`simple interst of amount is ; ${simple_interst}`);
+console.log(`total amount you will get ${amount}`);
 
 // let x = parseFloat(prompt("enter the number:"));
 // console.log(x);
