@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+           
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <form name="contactfrom" onsubmit="return validateform()" action="confirmation.php" method="post">
+    <h2>Application form</h2>
+    <div class="row">
+        <label for="">Full Name</label>
+        <input type="text" name="name">
+        <div class="error" id="nameErr">
+        </div>
+    </div>
+    <div class="row">
+        <label for="">Email Address</label>
+        <input type="email" name="email">
+        <div class="error" id="emailErr">
+        </div>
+    </div>
+    <div class="row">
+        <label for="">Mobile Number</label>
+        <input type="text" name="mobile" maxlength="10">
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <div class="row">
+        <label for="">Country</label>
+        <select name="country" id="">
+            <option value="">Select</option>
+            <option value="">Australia</option>
+            <option value="">India</option>
+            <option value="">United Kingdom</option>
+            <option value="">United States</option>
+        </select>
+        <div class="error" id="countryErr"></div>
+    </div>
+    <div class="row">
+        <label for="">Gender</label>
+        <div class="form-inline">
+            <label for=""><input type="radio" name="gender" value="male">Male</label>
+            <label for=""><input type="radio" name="gender" value="female">Female</label>
+        </div>
+        <div class="error" id="genderErr"></div>
+    </div>
+    <div class="row">
+        <label for="">Hobbies <i>(Optional)</i> </label>
+        <div class="form-inline">
+            <label for=""><input type="checkbox" name="hobbies[]" value="sports">Sports</label>
+            <label for=""><input type="checkbox" name="hobbies[]" value="movies">Movies</label>
+            <label for=""><input type="checkbox" name="hobbies[]" value="music">Music</label>
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="submit">
+    </div>
+</form>
+</body>
+</html>
+        <script src="index2.js"></script>
+    
