@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Javascript</h1>
+        <ul>
+            <li>Cricket</li>
+            <li>Kabbadi</li>
+            <li>Kho-Kho</li>
+            <li>Football</li>
+            <li>Grapes</li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    let hx = document.querySelectorAll('li');
+    // let hd = document.getElementsByTagName('div');
+    let hd = document.querySelector('div');
+
+    let ht = document.querySelector('h1');
+    // ht.textContent = "Hello World";
+    // ht.innerText = "How are you ?";
+    // ht.innerHTML = "What are you doing?";
+    // ht.textContent = "<h5>hello world</h5>";
+    // ht.innerText = "<h5>hello world</h5>";
+    // ht.innerHTML = "<h5>hello world</h5>";
+
+    // console.log(hd);
+    // console.log(hx);
+
+    hx[0].textContent = "Pineapple";
+    hx[1].textContent = "Mango";
+    hx[2].textContent = "Strawberry";
+    hx[3].textContent = "Watermelon";
+    hx[4].textContent = "Grapes";
+
+    // hx[0].style.background = "#000";
+    // hx[1].style.background = "#000";
+    // hx[2].style.background = "#000";
+    // hx[3].style.background = "#000";
+    // hx[4].style.background = "#000";
+
+    // hx[0].style.color = "green";
+    // hx[1].style.color = "green";
+    // hx[2].style.color = "green";
+    // hx[3].style.color = "green";
+    // hx[4].style.color = "green";
+
+    // hx[0].style.listStyle = "none";
+    // hx[1].style.listStyle = "none";
+    // hx[2].style.listStyle = "none";
+    // hx[3].style.listStyle = "none";
+    // hx[4].style.listStyle = "none";
+
+    ht.style.color = "green";
+
+    hd.style.height = "250px";
+    hd.style.width = "250px";
+    hd.style.background = "#000";
+    hd.style.margin = "auto";
+    hd.style.marginTop = "200px";
+
+    // LOOP //
+
+    for (let i = 0; i < 5; i++) {
+        hx[i].style.color = "green";
+    }
+    
+</script>
