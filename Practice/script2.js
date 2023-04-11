@@ -2,7 +2,7 @@
 // {
 //     let list = document.createElement('li');
 //     console.log(list);
-// } 
+// }
 
 // const listitems = document.createElement('div');
 // document.body.appendChild('div');
@@ -45,27 +45,23 @@
 // }
 // function1();
 
-const arr=['alpha','bravo','charlie','delta','echo'];
-const cont=document.getElementById('container');
+const arr = ["alpha", "bravo", "charlie", "delta", "echo"];
+const cont = document.getElementById("container");
 
 // create ul Element and set its attributes
 
-const ul = document.createElement('ul');
-ul.setAttribute('style','padding:0; margin:0');
-ul.setAttribute('id','thelist');
+const ul = document.createElement("ul");
+// ul.setAttribute("style", "padding:0; margin:0");
+ul.setAttribute("id", "thelist");
+console.log(ul);
+for (i = 0; i <= arr.length - 1; i++) {
+  const li = document.createElement("li"); // create li element //
+  li.innerHTML = arr[i]; // append li to ul //
+//   li.setAttribute("style", "display:block;");
 
-for(i=0; i<=arr.length -1; i++)
-{
-    const li =document.createElement('li');   // create li element //
-    li.innerHTML = arr[i];    // append li to ul //
-    li.setAttribute('style','display:block;');
-
-    ul.appendChild(li);
+  ul.appendChild(li);
 }
-cont.appendChild(ul);   //  add ul to the container  //
-
-
-
+cont.appendChild(ul); //  add ul to the container  //
 
 
 
