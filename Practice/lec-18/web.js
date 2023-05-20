@@ -10,7 +10,7 @@ function SetHeader(name)
     li.textContent=name;
     return li ;
 }
-// let menu=document.getElementById('Header');
+// let menu = document.getElementById('Header');
 let menu=document.querySelector("#Header");
 menu.appendChild(SetHeader("Home"));
 menu.appendChild(SetHeader("About"));
