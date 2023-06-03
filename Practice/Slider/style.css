@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+img {
+    height: inherit;
+    width: 100%;
+}
+
+#one,
+#two,
+#three {
+    position: absolute;
+    background-color: blanchedalmond;
+    bottom: 5px;
+    height: 15px;
+    width: 18px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#one:hover,
+#two:hover,
+#three:hover {
+    background-color: aquamarine;
+}
+
+#one {
+    left: 45%;
+}
+
+#two {
+    left: 50%;
+}
+
+#three {
+    left: 55%;
+}

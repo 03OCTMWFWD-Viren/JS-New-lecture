@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <img id="simage"
+            src="https://images.pexels.com/photos/7846475/pexels-photo-7846475.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="">
+
+        <div id="one" onclick="one()"></div>
+        <div id="two" onclick="two()"></div>
+        <div id="three" onclick="three()"></div>
+    </div>
+    <script>
+        function one() {
+            document.getElementById("simage").src = "https://images.pexels.com/photos/163490/war-desert-guns-gunshow-163490.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
+        function two() {
+            document.getElementById("simage").src = "https://images.pexels.com/photos/163425/war-desert-guns-gunshow-163425.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
+        function three() {
+            document.getElementById("simage").src = "https://images.pexels.com/photos/876344/pexels-photo-876344.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
+    </script>
+</body>
+
+</html>
